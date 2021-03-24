@@ -93,9 +93,9 @@
 		}
 	else
 	{
-      		print "<p>Missing or invalid parameters. Please go back to the lab.html page to
+      		print "<p>Missing or invalid parameters. Please go back to the marathonreg.html page to
       		enter valid information.<br />";
-      		print "<a href='UnitConvertion.html'>Unit Converter Page</a>";
+      		print "<a href='marathonreg.html'>Marathon Registration Page</a>";
 	}
 ?>
 	<div style="text-align:center">
