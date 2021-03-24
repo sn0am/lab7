@@ -32,6 +32,9 @@
 		$fn = filter_var( $_POST['fn'], FILTER_SANITIZE_STRING);
 		$G = filter_var( $_POST['G'], FILTER_SANITIZE_STRING);
 		$ad = filter_var( $_POST['ad'], FILTER_SANITIZE_STRING);
+		$zip = filter_var( $_POST['zip'], FILTER_SANITIZE_NUMBER_INT);
+		$S = filter_var( $_POST['S'], FILTER_SANITIZE_STRING);
+		$city = filter_var( $_POST['city'], FILTER_SANITIZE_STRING);
 		
 		if ($T == "SM") {
 			if ($age < 65) {
@@ -82,7 +85,7 @@
 		echo "</br>";
 		echo "</br>";
 		echo "<p style='color: black ;'>Please verify that the information below is correct. If it is not, please go back and fill out the form properly to get accurate pricing information." . "</p>" ;
-		echo "<p style='color: black ;'>Address: " . $ad . "</p>";
+		echo "<p style='color: black ;'>Address: " . $ad . ", " . $city  . ", " . $S . " " . $zip . "</p>";
 		echo "<p style='color: black ;'>Age: " . $age . "</p>";
 		echo "<p style='color: black ;'>Gender: " . $G . "</p>";
 		echo "<p style='color: black ;'>Shirt Size: " . $T . "</p>";
@@ -93,9 +96,9 @@
 		}
 	else
 	{
-      		print "<p>Missing or invalid parameters. Please go back to the marathonreg.html page to
+      		print "<p>Missing or invalid parameters. Please go back to the lab.html page to
       		enter valid information.<br />";
-      		print "<a href='marathonreg.html'>Marathon Registration Page</a>";
+      		print "<a href='UnitConvertion.html'>Unit Converter Page</a>";
 	}
 ?>
 	<div style="text-align:center">
